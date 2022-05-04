@@ -57,4 +57,4 @@
 * 8 - Salvar
 
 # 7 Construindo a pipeline no Jnekins:
-* Em construcao.
+* Modifique o arquivo do Dockerfile do Nginx para disparar o pipeline, cheque seu navegador http://localhost:666
