@@ -29,8 +29,8 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-	      sh 'sshpass -p jenkins scp /tmp/arquivos.tgz jenkins@192.168.0.100:/home/jenkins/DevOps/deploy/'	   
-	      sh 'sshpass -p "jenkins" ssh jenkins@192.168.0.100 tar xfz /home/jenkins/DevOps/deploy/arquivos.tgz -C /home/jenkins/DevOps/deploy/'		    
+	      sh 'sshpass -p jenkins scp /tmp/arquivos.tgz jenkins@192.168.0.100:/home/jenkins/'	   
+	      sh 'sshpass -p "jenkins" ssh jenkins@192.168.0.100 tar xfz /home/jenkins/arquivos.tgz -C /home/jenkins'		    
             }
         }    		
         stage('Checkout') { 
