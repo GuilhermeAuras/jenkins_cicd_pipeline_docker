@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    image: guilhermeauras/minha-imagem-nginx-bill:latest
+    container_name: container-guilherme-nginx
+    ports:
+        - "666:80"
+
