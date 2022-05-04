@@ -30,12 +30,13 @@ pipeline {
         stage('Deploy') { 
             steps {
 	      sh 'sshpass -p jenkins scp /tmp/arquivos.tgz jenkins@192.168.0.100:/home/jenkins/'	   
-	      sh 'sshpass -p "jenkins" ssh jenkins@192.168.0.100 tar xfz /home/jenkins/arquivos.tgz -C /home/jenkins'		    
+	      sh 'sshpass -p "jenkins" ssh jenkins@192.168.0.100 tar xfz /home/jenkins/arquivos.tgz -C /home/jenkins'
+	      sh 'sshpass -p jenkins ssh jenkins@192.168.0.100 docker-compose up -d'	    
             }
         }    		
         stage('Checkout') { 
             steps {
-              sh 'echo checkout' 
+              sh 'sshpass -p "jenkins" ssh jenkins@192.168.0.100 docker ps | grep container-guilherme-nginx | echo $? |  if [ $? -eq 0 ]; then echo sucesso; else exit 1; fi' 
             }
         }
         stage('Notificationt') { 
