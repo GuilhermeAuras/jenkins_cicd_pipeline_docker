@@ -41,7 +41,7 @@ pipeline {
         }
         stage('Notificationt') { 
             steps {
-              sh 'echo notification futuro via slack'		    
+              sh 'echo notification futuro via slack ou email...'		    
             }
         }  
         stage('Clean') { 
