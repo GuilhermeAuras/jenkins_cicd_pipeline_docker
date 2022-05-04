@@ -39,7 +39,7 @@ pipeline {
               sh 'sshpass -p "jenkins" ssh jenkins@192.168.0.100 docker ps | grep container-guilherme-nginx | echo $? |  if [ $? -eq 0 ]; then echo sucesso; else exit 1; fi' 
             }
         }
-        stage('Notificationt') { 
+        stage('Notification') { 
             steps {
               sh 'echo notification futuro via slack ou email...'		    
             }
