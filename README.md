@@ -58,3 +58,5 @@
 
 # 7 Construindo a pipeline no Jnekins:
 * Modifique o arquivo do Dockerfile do Nginx para disparar o pipeline, cheque seu navegador http://localhost:666
+
+<img src="pipeline_sucesso_exemplo.png" alt="Pipeline"/>
