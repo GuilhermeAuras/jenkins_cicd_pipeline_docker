@@ -6,11 +6,12 @@
 <br>jenkins_cicd
 * cd jenkins_cicd
 * ls -1
-<br>docker-compose.yaml
-<br>Dockerfile
-<br>Jenkinsfile
+<br>jenkins
+<br>nginx
+<br>README.md
 
 # 3 Subindo o Jnekins:
+* cd jenkins
 * ls -1 | grep docker-compose.yaml
 <br>docker-compose.yaml 
 * docker-compose up -d
