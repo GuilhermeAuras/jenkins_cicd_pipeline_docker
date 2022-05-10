@@ -1,5 +1,5 @@
 # 1 Clone o repositorio:
-* git clone https://github.com/GuilhermeAuras/jenkins_cicd.git
+* git clone https://github.com/GuilhermeAuras/jenkins_cicd_pipeline_docker.git
 
 # 2 Navegue ate o diretorio que vc clonou o repositorio ex:
 * ls -1
@@ -52,7 +52,7 @@
 * 3 - Escolha Pipeline e OK
 * 4 - Coloque uma descricao se quiser
 * 5 - Em Pipeline defina Pipeline script from SCM
-* 6 - Em SCM defina Git e coloque a URL: https://github.com/GuilhermeAuras/jenkins_cicd.git
+* 6 - Em SCM defina Git e coloque a URL: https://github.com/GuilhermeAuras/jenkins_cicd_pipeline_docker.git
 * 7 - Em branch mude master para main
 * 8 - Salvar
 
